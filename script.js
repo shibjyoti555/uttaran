@@ -15,7 +15,7 @@ const endYear = currentYear + 3;
 for (let startYear = 1950; startYear <= endYear - 2; startYear++) {
 	const endYear = startYear + 2;
 	const option = document.createElement("option");
-	option.value = `${startYear}-${endYear}`;
-	option.textContent = `${startYear}-${endYear}`;
+	option.value = `${endYear}`;
+	option.textContent = `${endYear}`;
 	select.appendChild(option);
 }
