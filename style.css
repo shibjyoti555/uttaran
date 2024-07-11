@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: 'shapna-e', Arial, sans-serif; /* Ensure the custom font is properly included */
+    font-weight: bold;
+    font-size: 40px; /* Reduced size for better readability on mobile */
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.small-text {
+    font-size: smaller;
+    margin: 10px 20px; /* Add margin for better spacing on mobile */
+}
+
+form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 90%; /* Ensure form width is responsive */
+    max-width: 500px; /* Limit the form width on larger screens */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px; /* Increase padding for better touch targets */
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+.borderline {
+    border-bottom: 5px solid #000;
+    margin: 20px 0;
+}
+
+#submit-message {
+    color: green;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px; /* Adjust heading size for smaller screens */
+    }
+
+    form {
+        width: 100%;
+        margin: 20px auto; /* Center form on small screens */
+    }
+
+    .small-text {
+        font-size: 14px; /* Adjust small text size for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Further adjust heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Adjust subheading size for readability */
+    }
+}
