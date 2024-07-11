@@ -1,83 +1,139 @@
+/* style.css */
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+.center {
+    text-align: center;
+}
+
+/* Logo */
 #logo {
-    width: 100px;
+    max-width: 100%;
     height: auto;
-    margin: 10px 0;
 }
 
+/* Headings */
 h1 {
-    font-family: 'shapna-e', Arial, sans-serif; /* Ensure the custom font is properly included */
-    font-weight: bold;
-    font-size: 40px; /* Reduced size for better readability on mobile */
-}
-
-h2 {
-    margin: 10px 0;
-}
-
-.small-text {
-    font-size: smaller;
-    margin: 10px 20px; /* Add margin for better spacing on mobile */
-}
-
-form {
-    margin-top: 20px;
-    display: inline-block;
-    text-align: left;
-    width: 90%; /* Ensure form width is responsive */
-    max-width: 500px; /* Limit the form width on larger screens */
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 10px; /* Increase padding for better touch targets */
-    margin: 5px 0;
-    box-sizing: border-box;
-    font-size: 16px; /* Increase font size for better readability */
-}
-
-.borderline {
-    border-bottom: 5px solid #000;
+    font-size: 2em;
     margin: 20px 0;
 }
 
-#submit-message {
-    color: green;
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-/* Media Queries for Responsiveness */
+/* Borderline */
+.borderline {
+    border-top: 2px solid #000;
+    margin: 20px 0;
+}
+
+/* Paragraph */
+.small-text {
+    font-size: 1em;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#submit-message {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     h1 {
-        font-size: 30px; /* Adjust heading size for smaller screens */
+        font-size: 1.5em;
     }
 
-    form {
-        width: 100%;
-        margin: 20px auto; /* Center form on small screens */
+    h2 {
+        font-size: 1.2em;
     }
 
     .small-text {
-        font-size: 14px; /* Adjust small text size for readability */
+        font-size: 0.9em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 24px; /* Further adjust heading size for smaller screens */
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 18px; /* Adjust subheading size for readability */
+        font-size: 1em;
+    }
+
+    .small-text {
+        font-size: 0.8em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px;
     }
 }

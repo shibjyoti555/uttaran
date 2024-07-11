@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>উত্তরন | Department of Electronics and Instrumentation Engineering</title> <!-- Updated title for better SEO -->
-    
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="উত্তরন - Presented by Department of Electronics and Instrumentation Engineering. Connect with us and explore our wall magazine.">
-    
-    <!-- Including Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <center><img id="logo" src="z.44f0bb0b.png" alt="উত্তরন Logo"></center> <!-- Added descriptive alt text -->
-    <center><h1>উত্তরন</h1></center>
-    <h2>Presented by Department of Electronics and Instrumentation Engineering</h2> <!-- H2 for better structure -->
-    
-    <!-- Separator Line -->
-    <div class="borderline"></div>
-    
-    <!-- Information Paragraph -->
-    <p class="small-text">If you want to connect with us, fill the form below. After that, you can see the wall magazine by verifying your face.</p>
-    
-    <!-- Connection Form -->
-    <form id="connect-form">
-        <!-- Name Field -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <!-- Department Selection -->
-        <label for="department">Department:</label>
-        <select id="department" name="department" required>
-            <option value="Electronics and Instrumentation Engineering">Electronics and Instrumentation Engineering</option>
-            <option value="Electrical Engineering">Electrical Engineering</option>
-            <option value="Computer Science and Technology">Computer Science and Technology</option>
-            <option value="Food Processing Technology">Food Processing Technology</option>
-            <option value="Mechanical Engineering">Mechanical Engineering</option>
-            <option value="Civil Engineering">Civil Engineering</option>
-            <option value="Others">Others</option>
-        </select>
-        
-        <!-- Year of Passing Field -->
-        <label for="year">Year of Passing:</label>
-        <input type="number" id="year" name="year" required>
-        
-        <!-- Photo Upload Field -->
-        <label for="photo">Click a photo of your face:</label>
-        <input type="file" id="photo" name="photo" accept="image/*" capture="user" required>
-        
-        <!-- Declaration Checkbox -->
-        <label for="declaration">
-            <input type="checkbox" id="declaration" name="declaration" required>
-            All the information provided above are true and best to my knowledge.
-        </label>
-        
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
-    </form>
-    
-    <!-- Submit Message -->
-    <p id="submit-message"></p>
-    
-    <!-- Including Script File -->
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>উত্তরন | Department of Electronics and Instrumentation Engineering</title>
+        <!-- Updated title for better SEO -->
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="উত্তরন - Presented by Department of Electronics and Instrumentation Engineering. Connect with us and explore our wall magazine.">
+        <!-- Including Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <img id="logo" src="z.44f0bb0b.png" alt="উত্তরন Logo">
+        </center>
+        <!-- Added descriptive alt text -->
+        <center>
+            <h1>উত্তরন</h1>
+        </center>
+        <h2>Presented by Department of Electronics and Instrumentation Engineering</h2>
+        <!-- H2 for better structure -->
+        <!-- Separator Line -->
+        <div class="borderline"></div>
+        <!-- Information Paragraph -->
+        <p class="small-text">If you want to connect with us, fill the form below. After that, you can see the wall magazine by verifying your face.</p>
+        <!-- Connection Form -->
+        <form id="connect-form">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
+            <!-- Department Selection -->
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="Electronics and Instrumentation Engineering">Electronics and Instrumentation Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Computer Science and Technology">Computer Science and Technology</option>
+                <option value="Food Processing Technology">Food Processing Technology</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Others">Others</option>
+            </select>
+            <!-- Year of Passing Field -->
+            <label for="year">Year of Passing:</label>
+            <input
+                type="number"
+                id="year"
+                name="year"
+                required
+            >
+            <!-- Photo Upload Field -->
+            <label for="photo">Click a photo of your face:</label>
+            <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/*"
+                capture="user"
+                required
+            >
+            <!-- Declaration Checkbox -->
+            
+			<div class="checkbox-container">
+            <input type="checkbox" id="declaration" required>
+            <label for="declaration"> the information provided above are true and best to my knowledge.</label>
+        </div>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Submit Message -->
+        <p id="submit-message"></p>
+        <!-- Including Script File -->
+        <script src="script.js"></script>
+    </body>
 </html>
