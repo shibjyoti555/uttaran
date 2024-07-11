@@ -46,13 +46,15 @@
                 <option value="Others">Others</option>
             </select>
             <!-- Year of Passing Field -->
-            <label for="year">Year of Passing:</label>
-            <input
+            <label for="sessionyear">Year of Passing:</label>
+			<select name="sessionyear" id="sessionyear"></select>
+            <!-- <input
                 type="number"
                 id="year"
                 name="year"
                 required
-            >
+            > -->
+
             <!-- Photo Upload Field -->
             <label for="photo">Click a photo of your face:</label>
             <input
@@ -64,11 +66,10 @@
                 required
             >
             <!-- Declaration Checkbox -->
-            
-			<div class="checkbox-container">
-            <input type="checkbox" id="declaration" required>
-            <label for="declaration">All the information provided above are true and best to my knowledge.</label>
-        </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="declaration" required>
+                <label for="declaration">All the information provided above are true and best to my knowledge.</label>
+            </div>
             <!-- Submit Button -->
             <button type="submit">Submit</button>
         </form>
