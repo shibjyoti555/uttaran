@@ -10,10 +10,10 @@ document
 	});
 const select = document.getElementById("sessionyear");
 const currentYear = new Date().getFullYear();
-const endYear = currentYear + 4;
+const endYear = currentYear + 3;
 
-for (let startYear = 1950; startYear <= endYear - 3; startYear++) {
-	const endYear = startYear + 3;
+for (let startYear = 1950; startYear <= endYear - 2; startYear++) {
+	const endYear = startYear + 2;
 	const option = document.createElement("option");
 	option.value = `${startYear}-${endYear}`;
 	option.textContent = `${startYear}-${endYear}`;
