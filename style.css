@@ -8,6 +8,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
     background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
 
 .center {
@@ -29,6 +33,12 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.whitetext {
+    color: #eeeeee;
 }
 
 /* Borderline */
@@ -41,11 +51,12 @@ h2 {
 .small-text {
     font-size: 1em;
     margin: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 /* Form Styles */
-form {
+form, .whitetext {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
